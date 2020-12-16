@@ -1,0 +1,17 @@
+﻿
+Partial Class _home
+    Inherits System.Web.UI.Page
+
+
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+      
+
+    End Sub
+
+    'Protected Sub lbtnlogin_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles lbtnlogin.Click
+    '    Response.Redirect("Login.aspx")
+    'End Sub
+
+   
+End Class
