@@ -118,7 +118,7 @@ Partial Class Reservation_reserv
         End Using
         'End Using
         If Not String.IsNullOrEmpty(mail) Then
-            Dim mm As New MailMessage("shubhamravani67890@gmail.com", txtmail.Text.Trim)
+            Dim mm As New MailMessage("email id", txtmail.Text.Trim)
             mm.Subject = "Car Reservation"
             mm.Body = String.Format("Hi {0},<br /><br />Your Car is Reserved.<br /> <br />Thank You.", username)
             mm.IsBodyHtml = True
@@ -126,8 +126,8 @@ Partial Class Reservation_reserv
             smtp.Host = "smtp.gmail.com"
             smtp.EnableSsl = True
             Dim NetworkCred As New NetworkCredential()
-            NetworkCred.UserName = "shubhamravani67890@gmail.com"
-            NetworkCred.Password = "@king#555#khan@"
+            NetworkCred.UserName = "email id"
+            NetworkCred.Password = "password"
             smtp.UseDefaultCredentials = True
             smtp.Credentials = NetworkCred
             smtp.Port = 587
