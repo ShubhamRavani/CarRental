@@ -25,7 +25,7 @@ Partial Class forgetpass
             End Using
         End Using
         If Not String.IsNullOrEmpty(password) Then
-            Dim mm As New MailMessage("shubhamravani@gmail.com", txtemail.Text.Trim)
+            Dim mm As New MailMessage("email id", txtemail.Text.Trim)
             mm.Subject = "Password Recovery"
             mm.Body = String.Format("Dear {0},<br /><br />This message was generated to recover your Car Rentals Password.<br />The password is {1}.<br /><br />Thank You.", username, password)
             mm.IsBodyHtml = True
@@ -33,8 +33,8 @@ Partial Class forgetpass
             smtp.Host = "smtp.gmail.com"
             smtp.EnableSsl = True
             Dim NetworkCred As New NetworkCredential()
-            NetworkCred.UserName = "shubhamravani@gmail.com"
-            NetworkCred.Password = "@king#555#khan@"
+            NetworkCred.UserName = "email id"
+            NetworkCred.Password = "password"
             smtp.UseDefaultCredentials = True
             smtp.Credentials = NetworkCred
             smtp.Port = 587
